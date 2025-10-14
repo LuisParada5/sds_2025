@@ -1,0 +1,5 @@
+//creamos la imagen
+docker build -t sds-server-ph .
+
+//creamos el contenedor
+docker run -d --name sds-contenedor-server -p 8080:80 -v .:/var/www/html sds-server-ph
