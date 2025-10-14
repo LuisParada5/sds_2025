@@ -111,4 +111,28 @@ body {
     margin-top: 40px;
     color: #777;
 }
+ 
+/* diseño de dia 1*/
+
+.actividad-card {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.galeria-fotos img {
+    width: 150px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.galeria-videos iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
 
