@@ -6,8 +6,8 @@ class Dia1Controller {
                 'titulo' => 'Palabras de Apertura',
                 'descripcion' => 'Inauguración con participación de la Vicedecana, Ing. Jose Luis Castro, Ing. Diego Herrera y Bachiller Karla. Palabras de bienvenida.',
                 'fotos' => [
-                    '/public/img/dia1/apertura1.jpg',
-                    '/public/img/dia1/apertura2.jpg'
+                    '/img/dia1/apertura1.jpg',
+                    '/img/dia1/apertura2.jpg'
                 ],
                 'videos' => []
             ],
@@ -15,7 +15,7 @@ class Dia1Controller {
                 'titulo' => 'Ponencia: ABC del Bitcoin',
                 'descripcion' => 'Por Luis Contreras. Se mencionó la filosofía de la Escuela de Economía Austríaca, carteras de bitcoin y Blin Wallet.',
                 'fotos' => [
-                    '/public/img/dia1/bitcoin.jpg'
+                    '/img/dia1/bitcoin.jpg'
                 ],
                 'videos' => []
             ],
@@ -23,7 +23,7 @@ class Dia1Controller {
                 'titulo' => 'Ponencia: IA Generativa',
                 'descripcion' => 'Por Rodrigo Pineda. Frases: "El conocimiento es poder". IA recomendada: N8n IA, Clause IA, modelo Cascade. Enfatizó en la calidad de los prompts.',
                 'fotos' => [
-                    '/public/img/dia1/ia.jpg'
+                    '/img/dia1/ia.jpg'
                 ],
                 'videos' => []
             ],
@@ -39,12 +39,12 @@ class Dia1Controller {
                     </ul>
                 ',
                 'fotos' => [
-                    '/public/img/dia1/hackaton.jpg'
+                    '/img/dia1/hackaton.jpg'
                 ],
                 'videos' => []
             ]
         ];
-
-        require_once 'app/views/dia1.php';
+        
+        require_once __DIR__ . '/../views/dia1.php';
     }
 }
