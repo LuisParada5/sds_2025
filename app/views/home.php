@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Semana de Sistemas 2025 - Inicio</title>
     <link rel="stylesheet" href="/public/css/style.css">
-    <a href="/dia1">Día 1</a>
+    
 
     
 </head>

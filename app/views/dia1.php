@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Día 1 - Semana de Sistemas 2025</title>
-    <link rel="stylesheet" href="/public/css/style.css">
+   <link rel="stylesheet" href="/public/css/style.css">
 </head>
 <body>
     <header class="hero">
