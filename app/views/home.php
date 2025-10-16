@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Semana de Sistemas 2025 - Inicio</title>
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     
 
     
@@ -48,7 +48,7 @@
             <div class="card">
                 <h3>Mi Información</h3>
                 <p>Conoce al autor de este blog.</p>
-                <a href="/mi-informacion" class="btn">Ver Perfil</a>
+                <a href="/info" class="btn">Ver Perfil</a>
             </div>
             <div class="card">
                 <h3>Registrar Visita</h3>
