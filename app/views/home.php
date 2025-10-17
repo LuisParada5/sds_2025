@@ -37,7 +37,7 @@
             </div>
             <div class="card">
                 <h3>Día 4</h3>
-                <p>no se hya.</p>
+                <p>Ferias de Logros y Pupuseada.</p>
                 <a href="/dia4" class="btn">Ver Día 4</a>
             </div>
             <div class="card">
