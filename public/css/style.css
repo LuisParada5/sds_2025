@@ -241,3 +241,183 @@ body {
   from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+
+  /* Día 2 - Diseño */
+ body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: linear-gradient(135deg, #0066cc, #3399ff);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.8em;
+}
+
+.hero .btn {
+    background: #ffcc00;
+    color: #003366;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #e6b800;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #003366;
+}
+
+/* Grid para las tarjetas de actividades */
+.grid-actividades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.actividad-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 25px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.actividad-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.actividad-card h3 {
+    color: #0066cc;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.actividad-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.galeria-fotos img {
+    width: calc(33.33% - 6.6px);
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.05);
+}
+
+.galeria-videos video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0066cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #004999;
+}
+
+.footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+  /* Fin Día 2 - Diseño */
+  /* Contenedor de fotos dentro de la tarjeta */
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Cada imagen en la galería */
+.galeria-fotos img {
+    width: calc(33.33% - 10px); /* 3 imágenes por fila con espacio */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Lightbox overlay */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 999;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+}
+
+.lightbox-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
