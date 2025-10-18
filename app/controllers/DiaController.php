@@ -100,17 +100,21 @@ class DiaController {
 
 
             case 3:
-                return [
-                    [
-                        'titulo' => 'Torneo de Fútbol 11',
-                        'descripcion' => 'Competencia amistosa entre equipos de la carrera. Se buscaba promover la unión y el espíritu deportivo. El evento tuvo gran participación estudiantil.',
-                        'fotos' => [
-                            '/img/dia3/futbol1.jpg',
-                            '/img/dia3/futbol2.jpg'
-                        ],
-                        'videos' => []
-                    ]
-                ];
+    return [
+        [
+            'titulo' => 'Suspensión de Actividades por Lluvias',
+            'descripcion' => 'Debido a las fuertes lluvias registradas durante el día, se suspendieron todas las actividades programadas, tanto en modalidad presencial como virtual. 
+            La medida fue tomada con el fin de garantizar la seguridad de los estudiantes, docentes y personal administrativo. 
+            Se emitieron comunicados oficiales informando la suspensión y las nuevas fechas fueron notificadas  a través de los canales institucionales.',
+            'fotos' => [
+                '/img/dia3/comunicado1.jpg',
+                '/img/dia3/comunicado2.jpg',
+                '/img/dia3/comunicado3.jpg',
+                '/img/dia3/comunicado4.jpg'
+            ]
+        ]
+    ];
+
 
 
             case 4:
