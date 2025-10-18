@@ -1,0 +1,14 @@
+-- Crear base de datos (si no existe)
+CREATE DATABASE IF NOT EXISTS sds_2025 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- Usar la base de datos
+USE sds_2025;
+
+-- Crear tabla visitas
+CREATE TABLE IF NOT EXISTS visita (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(150) NOT NULL,
+    comentario TEXT NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

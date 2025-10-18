@@ -1,25 +1,38 @@
 <?php
 
+require_once __DIR__ . '/../models/Visita.php';
+
 class VisitaController {
-    public function index() {
-        // Muestra el formulario de visitas
-        require_once __DIR__ . '/../views/visita/index.php';
+
+    
+    public function index($mensaje = '') { 
+       
+        
+        require_once __DIR__ . '/../views/visita.php';
     }
 
+    
     public function guardar() {
+        $mensaje = ''; 
         
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $nombre = $_POST['nombre'] ?? '';
-            $email = $_POST['email'] ?? '';
+            
+            $email = $_POST['email'] ?? ''; 
             $comentario = $_POST['comentario'] ?? '';
 
-            echo "<h2>Visita registrada</h2>";
-            echo "<p><strong>Nombre:</strong> $nombre</p>";
-            echo "<p><strong>Email:</strong> $email</p>";
-            echo "<p><strong>Comentario:</strong> $comentario</p>";
-        } else {
-            echo "<p>Error: no se recibieron datos.</p>";
+            $visita = new Visita();
+            $resultado = $visita->guardar($nombre, $email, $comentario);
+
+            if ($resultado) {
+                $mensaje = "Registro de visita al blog realizado con éxito.";
+            } else {
+                $mensaje = "Ocurrió un error al registrar la visita.";
+            }
         }
+
+        
+        $this->index($mensaje);
     }
 }
 ?>

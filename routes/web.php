@@ -18,6 +18,6 @@ Route::get('/dia4', fn() => (new DiaController())->mostrar(4));
 Route::get('/dia5', fn() => (new DiaController())->mostrar(5));
 Route::get('/info', [new InfoController(), 'index']);
 Route::get('/visita', [new VisitaController(), 'index']);
-Route::post('/visita', [new VisitaController(), 'guardar']);
+Route::post('/visita/guardar', [new VisitaController(), 'guardar']);
 
 Route::get('/', [new HomeController(), 'index']);

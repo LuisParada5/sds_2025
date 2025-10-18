@@ -53,7 +53,7 @@
             <div class="card">
                 <h3>Registrar Visita</h3>
                 <p>Deja tu huella en nuestro blog.</p>
-                <a href="/visitas" class="btn">Registrar</a>
+                <a href="/visita" class="btn">Registrar</a>
             </div>
         </div>
     </main>

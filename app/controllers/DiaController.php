@@ -2,21 +2,21 @@
 
 class DiaController {
 
-    // Método principal que muestra el conetiido según el núnero del día
+    
     public function mostrar($dia) {
         $actividades = $this->obtenerActividades($dia);
 
         if (!$actividades) {
             http_response_code(404);
-            echo "<h2 style='text-align:center;margin-top:40px;'>❌ Día no encontrado</h2>";
+            echo "<h2 style='text-align:center;margin-top:40px;'> Día no encontrado</h2>";
             return;
         }
 
-        // Cargar la vista correspondienñe
+       
         include __DIR__ . "/../views/dias/dia{$dia}.php";
     }
 
-    // Dactilividades de cada día
+    
     private function obtenerActividades($dia) {
         switch ($dia) {
 
