@@ -1,16 +1,15 @@
 <?php
 
 
-//  Cargar el router antes de usarlo
 require_once __DIR__ . '/../lib/Route.php';
 
-//  Cargar controladores
+//  Cargar controladoreres
 require_once __DIR__ . '/../app/controllers/HomeController.php';
 require_once __DIR__ . '/../app/controllers/DiaController.php';
 require_once __DIR__ . '/../app/controllers/InfoController.php';
 require_once __DIR__ . '/../app/controllers/VisitaController.php';
 
-// Definir rutas
+// Definirer rutas
 Route::get('/', [new HomeController(), 'index']);
 Route::get('/dia1', fn() => (new DiaController())->mostrar(1));
 Route::get('/dia2', fn() => (new DiaController())->mostrar(2));

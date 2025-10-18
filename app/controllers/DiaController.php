@@ -2,7 +2,7 @@
 
 class DiaController {
 
-    // Método principal que muestra el contenido según el número del día
+    // Método principal que muestra el conetiido según el núnero del día
     public function mostrar($dia) {
         $actividades = $this->obtenerActividades($dia);
 
@@ -12,11 +12,11 @@ class DiaController {
             return;
         }
 
-        // Cargar la vista correspondiente (ejemplo: /views/dias/dia1.php)
+        // Cargar la vista correspondienñe
         include __DIR__ . "/../views/dias/dia{$dia}.php";
     }
 
-    // Devuelve las actividades de cada día
+    // Dactilividades de cada día
     private function obtenerActividades($dia) {
         switch ($dia) {
 
@@ -140,17 +140,37 @@ class DiaController {
 
 
             case 5:
-                return [
-                    [
-                        'titulo' => 'Clausura y Premiaciones',
-                        'descripcion' => 'Cierre oficial de la Semana de Sistemas 2025 con reconocimientos a los proyectos y equipos más destacados. Palabras finales de los docentes.',
-                        'fotos' => [
-                            '/img/dia5/clausura1.jpg',
-                            '/img/dia5/clausura2.jpg'
-                        ],
-                        'videos' => []
-                    ]
-                ];
+    return [
+        [
+            'titulo' => 'Bingo',
+            'descripcion' => 'Se llevó a cabo una actividad de <strong>Bingo</strong> utilizando un sistema desarrollado especialmente para el evento. La dinámica consistía en que los participantes se conectaban a la plataforma, elegían su cartón de juego y esperaban a que se anunciaran los números. El cartón seguía el diseño clásico, organizado en las columnas B-I-N-G-O. A medida que el administrador iba cantando los números generados de forma aleatoria, los usuarios debían marcarlos en sus cartones. El juego se desarrolló a lo largo de varias sesiones, y el primer jugador que lograba llenar la totalidad de su cartón ganaba la partida y era acreedor a un premio. Fue una actividad muy popular y con gran participación.',
+            'fotos' => [
+                '/img/dia5/bingo1.jpg',
+                '/img/dia5/bingo2.jpg',
+                '/img/dia5/bingo3.jpg',
+                '/img/dia5/bingo4.jpg'
+            ]
+        ],
+        [
+            'titulo' => 'Entrega de Diplomas a los Participantes de la Feria de Logros',
+            'descripcion' => 'Esta actividad tuvo como objetivo reconocer el esfuerzo y la dedicación de los estudiantes que presentaron sus proyectos. La dinámica consistió en hacer pasar a cada grupo de forma organizada para recibir su reconocimiento. Cada equipo que expuso su proyecto fue recompensado con un diploma, y además, a cada participante individual se le entregó una medalla, simbolizando su contribución y logro en la feria.',
+            'fotos' => [
+                '/img/dia5/diplomas1.jpg',
+                '/img/dia5/diplomas2.jpg',
+                '/img/dia5/diplomas3.jpg',
+                '/img/dia5/diplomas4.jpg'
+            ]
+        ],
+        [
+            'titulo' => 'Clash Royale',
+            'descripcion' => 'Se llevó a cabo un torneo del popular videojuego móvil <strong>Clash Royale</strong>, con una alta participación de estudiantes. La actividad se basó en una serie de rondas eliminatorias, donde los estudiantes compitieron en batallas estratégicas que definían quién avanzaba en el torneo. El objetivo era simple: superar a los demás participantes en las distintas fases. La competencia se mantuvo intensa hasta que quedaron definidos los tres últimos lugares.',
+            'fotos' => [
+                '/img/dia5/clash1.jpg',
+                '/img/dia5/clash2.jpg'
+            ]
+        ]
+    ];
+
 
             default:
                 return null;
