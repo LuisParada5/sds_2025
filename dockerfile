@@ -23,3 +23,4 @@ RUN printf "<Directory /var/www/html/public>\nOptions Indexes FollowSymLinks\nAl
 WORKDIR /var/www/html/public
 
 EXPOSE 80
+

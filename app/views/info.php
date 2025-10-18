@@ -29,9 +29,12 @@
             </div>
         </div>
 
-        <a href="/home" class="btn-volver">⬅ Volver al Inicio</a>
+        <a href="/" class="btn-volver">⬅ Volver al Inicio</a>
+        
     </main>
 
 </body>
 </html>
+
+
 

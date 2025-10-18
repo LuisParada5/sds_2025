@@ -2,19 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Día 4 - Semana de Sistemas 2025</title>
+    <title>Día 2 - Semana de Sistemas 2025</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header class="hero">
         <div class="hero-content">
-            <h1>Día 4 - Semana de Sistemas 2025</h1>
+            <h1>Día 2 - Semana de Sistemas 2025</h1>
             <a href="/" class="btn">Volver al Inicio</a>
         </div>
     </header>
 
     <main class="main-container">
-        <h2>Actividades del Día 4</h2>
+        <h2>Actividades del Día 2</h2>
 
         <div class="grid-actividades">
             <?php foreach ($actividades as $actividad): ?>
@@ -25,7 +25,7 @@
                     <?php if (!empty($actividad['fotos'])): ?>
                         <div class="galeria-fotos">
                             <?php foreach ($actividad['fotos'] as $foto): ?>
-                                <img src="<?= $foto ?>" alt="Foto de <?= htmlspecialchars($actividad['titulo']) ?>" loading="lazy" />
+                                <img src="<?= $foto ?>" alt="Foto" loading="lazy" />
                             <?php endforeach; ?>
                         </div>
                     <?php endif; ?>
@@ -33,9 +33,9 @@
                     <?php if (!empty($actividad['videos'])): ?>
                         <div class="galeria-videos">
                             <?php foreach ($actividad['videos'] as $video): ?>
-                                <video controls poster="<?= $actividad['fotos'][0] ?? '/img/default.jpg' ?>">
+                                <video controls>
                                     <source src="<?= $video ?>" type="video/mp4">
-                                    Tu navegador no soporta la reproducción de video.
+                                    Tu navegador no soporta este video.
                                 </video>
                             <?php endforeach; ?>
                         </div>
@@ -50,7 +50,6 @@
     </footer>
 
 <script>
-// Lightbox para imágenes
 const images = document.querySelectorAll('.galeria-fotos img');
 const overlay = document.createElement('div');
 overlay.classList.add('lightbox-overlay');
@@ -66,12 +65,18 @@ images.forEach(img => {
     });
 });
 
+// Cerrar overlay al hacer clic fuera de la imagen
 overlay.addEventListener('click', e => {
-    if (e.target !== overlayImage) {
+    if(e.target !== overlayImage) {
         overlay.classList.remove('active');
     }
 });
 </script>
+
+
+
+
 </body>
 </html>
+
 

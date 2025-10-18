@@ -1,6 +1,8 @@
 <?php
+
 class InfoController {
     public function index() {
+        
         $miInfo = [
             'nombre' => 'Luis Parada',
             'carrera' => 'Ingeniería en Sistemas Informáticos',
@@ -15,6 +17,7 @@ class InfoController {
             ]
         ];
 
+    
         require_once __DIR__ . '/../views/info.php';
     }
 }

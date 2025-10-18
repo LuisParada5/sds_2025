@@ -21,32 +21,32 @@
         <h2 id="secciones">Secciones del Blog</h2>
         <div class="card-grid">
             <div class="card">
-                <h3>Día 1</h3>
+                <h3>LUNES</h3>
                 <p>Resumen de la inauguración y primeras actividades.</p>
                 <a href="/dia1" class="btn">Ver Día 1</a>
             </div>
             <div class="card">
-                <h3>Día 2</h3>
-                <p>Ponencias destacadas y participación estudiantil creo jaja.</p>
+                <h3>MARTES</h3>
+                <p>Ponencias destacadas de manera virtual.</p>
                 <a href="/dia2" class="btn">Ver Día 2</a>
             </div>
             <div class="card">
-                <h3>Día 3</h3>
-                <p>esta por vereser.</p>
+                <h3>MIÉRCOLES</h3>
+                <p>Suspensión del Evento por fuertes lluvias.</p>
                 <a href="/dia3" class="btn">Ver Día 3</a>
             </div>
             <div class="card">
-                <h3>Día 4</h3>
+                <h3>JUEVES</h3>
                 <p>Ferias de Logros y Pupuseada.</p>
                 <a href="/dia4" class="btn">Ver Día 4</a>
             </div>
             <div class="card">
-                <h3>Día 5</h3>
-                <p>Clausura y reflexiones finoles del evento y fiestona.</p>
+                <h3>VIERNES</h3>
+                <p>Clausura, juego de BINGO, Diplomas y fiestona.</p>
                 <a href="/dia5" class="btn">Ver Día 5</a>
             </div>
             <div class="card">
-                <h3>Mi Información</h3>
+                <h3>MI INFORMACIÓN</h3>
                 <p>Conoce al autor de este blog.</p>
                 <a href="/info" class="btn">Ver Perfil</a>
             </div>
@@ -63,4 +63,6 @@
     </footer>
 </body>
 </html>
+
+
 

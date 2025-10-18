@@ -1,0 +1,58 @@
+version: "3.9"
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sds2025_app
+    ports:
+      - "8081:80"            # Acceso desde http://localhost:8080
+    volumes:
+      - ./app:/var/www/html/app
+      - ./lib:/var/www/html/lib
+      - ./routes:/var/www/html/routes
+      - ./public:/var/www/html/public
+      - ./autoloader.php:/var/www/html/autoloader.php
+    depends_on:
+      - db
+    environment:
+      TZ: America/El_Salvador
+    restart: unless-stopped
+
+
+  db:
+    image: mysql:8.0
+    container_name: sds2025_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: blog_sds2025
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpass
+      TZ: America/El_Salvador
+    volumes:
+      - db_data:/var/lib/mysql
+    ports:
+      - "3309:3306"
+
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: sds2025_phpmyadmin
+    restart: unless-stopped
+    depends_on:
+      - db
+    ports:
+      - "8082:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: 
+      UPLOAD_LIMIT: 128M
+      TZ: America/El_Salvador
+
+
+volumes:
+  db_data:
